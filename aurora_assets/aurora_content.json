@@ -1,0 +1,65 @@
+{
+  "source_html": "Wedding Invitation - Tiến Anh & Ngọc Huyền.html",
+  "couple": {
+    "groom": "Tiến Anh",
+    "bride": "Ngọc Huyền",
+    "display": "Tiến Anh & Ngọc Huyền"
+  },
+  "wedding_date": "07/12/2025",
+  "day": "Thứ Bảy",
+  "main_ceremony": {
+    "time": "17h30",
+    "venue": "Trung Tâm Hội Nghị Quốc Gia",
+    "address": "Mễ Trì, Nam Từ Liêm, Hà Nội"
+  },
+  "bride_ceremony": {
+    "time": "16h30",
+    "venue": "Tư Gia Nhà Gái",
+    "address": "Quốc Oai, Hà Nội"
+  },
+  "about_bride": "Cô dâu là người con gái dịu dàng, ấm áp nhưng cũng mạnh mẽ và độc lập. Ở cô luôn có sự tinh tế, yêu thương và biết quan tâm đến mọi người xung quanh. Trong ngày cưới, nụ cười của cô rạng rỡ hơn bao giờ hết, bởi hôm nay là khởi đầu của một hành trình mới cùng người mình yêu.",
+  "about_groom": "Chú rể là người đàn ông chín chắn, mạnh mẽ và đầy trách nhiệm. Anh mang trái tim ấm áp, luôn quan tâm và che chở cho người mình yêu. Trong ngày cưới, ánh mắt anh tràn đầy hạnh phúc và tự hào, bởi hôm nay anh chính thức nắm tay cô dâu bước vào hành trình mới của cuộc đời.",
+  "timeline": [
+    {
+      "time": "16:00 - 16:30",
+      "title": "Welcome Guest",
+      "description": "Đón khách"
+    },
+    {
+      "time": "16:30 - 17:00",
+      "title": "Outdoor Party",
+      "description": "Tiệc rượu cocktail và fingerfood"
+    },
+    {
+      "time": "17:00 - 20:00",
+      "title": "Ceremony",
+      "description": "Tiệc cưới"
+    },
+    {
+      "time": "20:30 - LATE",
+      "title": "Ending",
+      "description": "Tiễn khách"
+    }
+  ],
+  "love_story": [
+    {
+      "date": "20.01.2013",
+      "title": "Ngày đầu gặp gỡ",
+      "text": "Ngày ấy, giữa muôn vàn con người, chúng ta chạm mặt nhau như một sự sắp đặt của định mệnh. Ánh mắt đầu tiên đã mở ra câu chuyện dài đầy yêu thương."
+    },
+    {
+      "date": "15.04.2025",
+      "title": "Những tháng ngày yêu thương",
+      "text": "Những buổi hẹn nhẹ nhàng, tiếng cười, những lần nắm tay… đã viết nên từng trang kỷ niệm. Tình yêu lớn dần theo năm tháng, và chúng ta biết rằng mình thuộc về nhau."
+    },
+    {
+      "date": "07.12.2025",
+      "title": "Ngày thành đôi",
+      "text": "Sau hành trình đầy yêu thương, hôm nay chúng ta chính thức gọi nhau là vợ chồng. Ngày vui này là khởi đầu cho một chặng đường mới, cùng nhau xây đắp hạnh phúc."
+    }
+  ],
+  "gift_box": {
+    "groom": "Chú rể Tiến Anh - 01234567 - Vietinbank",
+    "bride": "Cô dâu Ngọc Huyền - 01234567 - MB bank"
+  }
+}

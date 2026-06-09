@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiến Anh & Ngọc Huyền | Thiệp Cưới Cổ Trang</title>
+  <meta name="description" content="Thiệp cưới online phong cách cổ trang Trung Hoa của Tiến Anh và Ngọc Huyền" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Cinzel:wght@500;700&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-silk"></div>
+  <div class="bg-grain"></div>
+  <div class="bg-glow"></div>
+  <div class="floating-layer" aria-hidden="true"></div>
+
+  <div class="topbar">
+    <div class="brand-mini">囍</div>
+    <div class="lang-switcher" aria-label="Language Switcher">
+      <button class="lang-btn active" data-lang="vi">VI</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zhHans">简</button>
+      <button class="lang-btn" data-lang="zhHant">繁</button>
+    </div>
+  </div>
+
+  <input id="curtainSwitch" class="curtain-switch" type="checkbox" aria-hidden="true" />
+
+  <div id="loader" class="loader">
+    <div class="loader-sky"></div>
+    <div class="loader-moon"></div>
+    <div class="loader-valance"></div>
+    <div class="loader-curtain outer left"></div>
+    <div class="loader-curtain outer right"></div>
+    <div class="loader-curtain inner left"></div>
+    <div class="loader-curtain inner right"></div>
+    <div class="loader-veil"></div>
+
+    <div class="loader-card">
+      <span class="loader-tag" data-i18n="loaderTag">良缘天定 · 佳偶天成</span>
+      <div class="loader-symbol">囍</div>
+      <div class="loader-calligraphy" data-i18n="loaderBrush">红绸轻启，月下成礼</div>
+      <h1 data-i18n="loaderTitle">Tiến Anh & Ngọc Huyền</h1>
+      <p data-i18n="loaderText">Mời bạn nhẹ mở rèm son để bước vào tấm thiệp cưới cổ phong, nơi ánh trăng, đèn lồng và nét mực ông đồ cùng chứng giám lương duyên của chúng tôi.</p>
+      <button id="openInvite" class="open-btn" type="button" onclick="window.openWeddingCurtain && window.openWeddingCurtain(event)">
+        <span>囍</span>
+        <strong data-i18n="openInvite">Mở Rèm Hỷ Sự</strong>
+        <small data-i18n="openHint">Chạm để mở thiệp</small>
+        <em class="open-anywhere" data-i18n="openAnywhere">Hoặc chạm bất kỳ đâu trên màn mở rèm</em>
+      </button>
+    </div>
+    <label for="curtainSwitch" class="open-hitbox" aria-label="Mở rèm thiệp cưới"></label>
+  </div>
+
+  <audio id="weddingMusic" loop preload="auto">
+    <source src="assets/music/wedding-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicToggle" class="music-toggle" aria-label="Toggle music">
+    <span class="music-dot"></span>
+    <span class="music-text">Nhạc Hỷ: Off</span>
+  </button>
+
+  <main class="page">
+    <section class="hero section" id="home">
+      <div class="hero-moon"></div>
+      <div class="hero-lightbeam beam-left"></div>
+      <div class="hero-lightbeam beam-right"></div>
+      <div class="hero-bokeh bokeh-a"></div>
+      <div class="hero-bokeh bokeh-b"></div>
+      <div class="hero-bokeh bokeh-c"></div>
+      <div class="hero-bokeh bokeh-d"></div>
+      <div class="hero-mountain mountain-back"></div>
+      <div class="hero-mountain mountain-mid"></div>
+      <div class="hero-palace"></div>
+      <div class="hero-water"></div>
+      <div class="hero-lotus-seat lotus-left"></div>
+      <div class="hero-lotus-seat lotus-right"></div>
+      <div class="hero-mist mist-left"></div>
+      <div class="hero-mist mist-right"></div>
+      <div class="hero-cloud cloud-1"></div>
+      <div class="hero-cloud cloud-2"></div>
+      <div class="hero-lanterns" aria-hidden="true">
+        <div class="lantern fancy"><span>囍</span></div>
+        <div class="lantern fancy"><span>缘</span></div>
+        <div class="lantern fancy"><span>福</span></div>
+        <div class="lantern fancy"><span>喜</span></div>
+        <div class="lantern fancy"><span>爱</span></div>
+      </div>
+
+      <div class="hero-sparkles" aria-hidden="true"></div>
+
+      <img class="mythic mythic-dragon" src="assets/images/dragon.png" alt="Chinese dragon" />
+      <img class="mythic mythic-phoenix" src="assets/images/phoenix.png" alt="Chinese phoenix" />
+      <img class="mythic mythic-longma" src="assets/images/longma.png" alt="Longma" />
+      <img class="mythic mythic-horse" src="assets/images/longma.png" alt="Celestial horse" />
+
+      <div class="hero-shell reveal">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow" data-i18n="heroEyebrow">良缘天定 · Song Mã thành duyên</span>
+            <div class="hero-symbol">囍</div>
+            <div class="hero-brush" data-i18n="heroBrush">花朝月夕 · 红绸成礼</div>
+            <h1 data-i18n="heroTitle">Tiến Anh & Ngọc Huyền</h1>
+            <p class="hero-text" data-i18n="heroText">Trong sắc son đèn lồng, ánh trăng thơ mộng và nét thư pháp cổ điển, chúng tôi hân hoan gửi đến bạn thiệp cưới online cho ngày vui thành đôi.</p>
+            <div class="hero-meta">
+              <span data-i18n="heroMetaDay">Thứ Bảy</span>
+              <strong>07 · 12 · 2025</strong>
+              <span>17:30</span>
+            </div>
+            <div class="hero-actions">
+              <a href="#invitation" class="btn primary" data-i18n="btnInvitation">Xem thiệp mời</a>
+              <a href="#portrait" class="btn secondary" data-i18n="btnPortrait">Xem chân dung</a>
+            </div>
+            <div class="hero-zodiac">
+              <span>午</span>
+              <p data-i18n="heroZodiac">Cả hai đều tuổi Ngọ · Song Mã hòa duyên, đồng tâm kết tóc, trăm năm viên mãn.</p>
+            </div>
+          </div>
+
+          <div class="hero-photo reveal-delay">
+            <div class="photo-card">
+              <div class="photo-badge">囍</div>
+              <img class="dynamic-photo" data-slot="1" data-fallback="assets/images/placeholder.svg" src="assets/images/placeholder.svg" alt="Tiến Anh và Ngọc Huyền" />
+              <div class="photo-caption">
+                <span data-i18n="photoTag">Uyên ương song mã</span>
+                <strong data-i18n="photoTitle">Tiến Anh & Ngọc Huyền</strong>
+                <small data-i18n="photoSub">百年好合 · 永结同心</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-tip" data-i18n="scrollTip">Cuộn xuống để tiếp tục</div>
+    </section>
+
+    <section class="section invitation-section" id="invitation">
+      <div class="section-title reveal">
+        <span data-i18n="secInviteTag">Thiệp hỷ</span>
+        <h2 data-i18n="secInviteTitle">Thư mời lễ thành hôn</h2>
+        <p data-i18n="secInviteText">Một tấm thiệp son đỏ, gửi trọn niềm vui và lời mời chân thành tới người thân, bạn bè và quý khách.</p>
+      </div>
+
+      <div class="invite-scroll reveal">
+        <div class="invite-paper">
+          <div class="invite-watermark">囍</div>
+          <p class="invite-han" data-i18n="inviteHan">百年好合 · 白首同心</p>
+          <h3 data-i18n="inviteNames">Tiến Anh và Ngọc Huyền</h3>
+          <p data-i18n="inviteBody">Nhân ngày lương duyên giai ngẫu, chúng tôi trân trọng kính mời quý khách đến tham dự lễ thành hôn và cùng sẻ chia khoảnh khắc hạnh phúc trong ngày vui của hai gia đình.</p>
+          <div class="families">
+            <div>
+              <small data-i18n="familyGroom">Nhà trai</small>
+              <strong data-i18n="familyGroomName">Gia đình họ Trịnh</strong>
+            </div>
+            <div>
+              <small data-i18n="familyBride">Nhà gái</small>
+              <strong data-i18n="familyBrideName">Gia đình họ Nguyễn</strong>
+            </div>
+          </div>
+          <div class="invite-details">
+            <div><span data-i18n="detailTime">Giờ lành</span><strong>17:30</strong></div>
+            <div><span data-i18n="detailDate">Ngày lành</span><strong>07/12/2025</strong></div>
+            <div><span data-i18n="detailVenue">Hỷ đường</span><strong data-i18n="venueHall">Trung Tâm Hội Nghị Quốc Gia</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section artistry-section">
+      <div class="duo-grid reveal">
+        <article class="art-card red">
+          <span class="art-han">龙凤呈祥</span>
+          <h3 data-i18n="bless1Title">Long phụng thành tường</h3>
+          <p data-i18n="bless1Text">Rồng uốn mây, phượng nghinh vũ như lời chúc phúc cho một lễ hỷ viên mãn và rực rỡ.</p>
+        </article>
+        <article class="art-card jade">
+          <span class="art-han">琴瑟和鸣</span>
+          <h3 data-i18n="bless2Title">Cầm sắt hòa minh</h3>
+          <p data-i18n="bless2Text">Sắc ngọc bích điểm nhẹ giữa son đỏ và vàng kim, tạo nên một tổng thể cổ điển, thanh nhã và sang trọng.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section calligraphy-section">
+      <div class="section-title reveal">
+        <span data-i18n="calliTag">Ông đồ đề chữ</span>
+        <h2 data-i18n="calliTitle">Góc thư pháp hỷ sự</h2>
+        <p data-i18n="calliText">Những nét mực nồng ấm như lời chúc tốt đẹp dành cho đôi tân lang - tân nương.</p>
+      </div>
+      <div class="calligraphy-grid reveal">
+        <article class="calligraphy-card">
+          <div class="brush-shadow">囍</div>
+          <span class="calligraphy-han">百年偕老</span>
+          <h3 data-i18n="calli1Title">Trăm năm giai lão</h3>
+          <p data-i18n="calli1Text">Một lời chúc cho đôi bạn nắm tay nhau đi trọn mọi mùa trăng gió.</p>
+        </article>
+        <article class="calligraphy-card jade">
+          <div class="brush-shadow">缘</div>
+          <span class="calligraphy-han">永结同心</span>
+          <h3 data-i18n="calli2Title">Vĩnh kết đồng tâm</h3>
+          <p data-i18n="calli2Text">Nét ngọc bích cổ phong hòa cùng thư pháp, gợi sự đồng điệu và yên ấm.</p>
+        </article>
+        <article class="calligraphy-card">
+          <div class="brush-shadow">福</div>
+          <span class="calligraphy-han">琴瑟和鸣</span>
+          <h3 data-i18n="calli3Title">Cầm sắt hòa minh</h3>
+          <p data-i18n="calli3Text">Một lời đề chữ ông đồ, thay cho ngàn vạn lời cầu chúc viên mãn.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section portrait-section" id="portrait">
+      <div class="section-title reveal">
+        <span data-i18n="portraitTag">Uyên ương</span>
+        <h2 data-i18n="portraitTitle">Chân dung song mã</h2>
+        <p data-i18n="portraitText">Ảnh của hai bạn được đặt trong khung cổ điển, hòa cùng chất thơ và nghi lễ phương Đông.</p>
+      </div>
+      <div class="portrait-wrap reveal">
+        <div class="portrait-frame">
+          <img class="dynamic-photo" data-slot="2" data-fallback="assets/images/placeholder.svg" src="assets/images/placeholder.svg" alt="Ảnh của Tiến Anh và Ngọc Huyền" />
+          <div class="portrait-stamp">囍</div>
+        </div>
+        <div class="portrait-copy">
+          <span class="copy-tag" data-i18n="portraitCopyTag">缘起 · 同心</span>
+          <h3 data-i18n="portraitCopyTitle">Tiến Anh & Ngọc Huyền</h3>
+          <p data-i18n="portraitCopyText">Một nụ cười dịu dàng, một ánh nhìn vững chãi — như hai cánh chim đồng điệu, cùng bước vào lễ đường dưới ánh đèn, hoa trắng và sắc hỷ đỏ thắm.</p>
+          <blockquote data-i18n="portraitQuote">“Song Mã kề vai, duyên trời se kết — từ nay gió trăng có đôi, đường đời có bạn.”</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="story">
+      <div class="section-title reveal">
+        <span data-i18n="storyTag">Chuyện tình yêu</span>
+        <h2 data-i18n="storyTitle">Cuộn thư tình cổ phong</h2>
+        <p data-i18n="storyText">Mình chọn kiểu cuộn giấy ngang vì rất hợp tinh thần cổ trang Trung Hoa, giống một bức thủ quyển từ từ mở ra, kể lại từng chương của chuyện tình yêu.</p>
+      </div>
+      <div class="story-scroll-wrap reveal">
+        <button class="story-nav prev" id="storyPrev" aria-label="Previous story">❮</button>
+        <div class="story-scroll-shell">
+          <div class="story-rod left"></div>
+          <div class="story-rod right"></div>
+          <div class="story-scroll-track" id="storyTrack">
+            <article class="story-panel active">
+              <div class="story-photo"><img class="dynamic-photo" data-slot="1" data-fallback="assets/images/placeholder.svg" src="assets/images/placeholder.svg" alt="Story photo 1"></div>
+              <div class="story-copy">
+                <span class="story-step">01</span>
+                <h3 data-i18n="story1Title">Khởi đầu dịu dàng</h3>
+                <p data-i18n="story1Text">Từ một ánh nhìn đầu tiên, mọi thứ bắt đầu thật nhẹ nhàng như gió xuân lướt qua hiên ngọc.</p>
+              </div>
+            </article>
+            <article class="story-panel">
+              <div class="story-photo"><img class="dynamic-photo" data-slot="2" data-fallback="assets/images/placeholder.svg" src="assets/images/placeholder.svg" alt="Story photo 2"></div>
+              <div class="story-copy">
+                <span class="story-step">02</span>
+                <h3 data-i18n="story2Title">Những ngày đồng hành</h3>
+                <p data-i18n="story2Text">Càng đi cùng nhau, chúng mình càng hiểu rằng bình yên đẹp nhất chính là có nhau trong từng ngày bình thường.</p>
+              </div>
+            </article>
+            <article class="story-panel">
+              <div class="story-photo"><img class="dynamic-photo" data-slot="3" data-fallback="assets/images/placeholder.svg" src="assets/images/placeholder.svg" alt="Story photo 3"></div>
+              <div class="story-copy">
+                <span class="story-step">03</span>
+                <h3 data-i18n="story3Title">Lời hẹn ước</h3>
+                <p data-i18n="story3Text">Giữa ánh trăng và đèn hoa, lời hẹn ước được giữ trong tim như một nét son không phai.</p>
+              </div>
+            </article>
+            <article class="story-panel">
+              <div class="story-photo"><img class="dynamic-photo" data-slot="4" data-fallback="assets/images/placeholder.svg" src="assets/images/placeholder.svg" alt="Story photo 4"></div>
+              <div class="story-copy">
+                <span class="story-step">04</span>
+                <h3 data-i18n="story4Title">Ngày thành đôi</h3>
+                <p data-i18n="story4Text">Và rồi cuộn thư tình khép lại bằng ngày vui lớn nhất: ngày hai trái tim chính thức nên duyên phu phụ.</p>
+              </div>
+            </article>
+          </div>
+          <div class="story-dots" id="storyDots">
+            <button class="dot active" data-index="0"></button>
+            <button class="dot" data-index="1"></button>
+            <button class="dot" data-index="2"></button>
+            <button class="dot" data-index="3"></button>
+          </div>
+        </div>
+        <button class="story-nav next" id="storyNext" aria-label="Next story">❯</button>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-title reveal">
+        <span data-i18n="galleryTag">Album</span>
+        <h2 data-i18n="galleryTitle">Album trân tàng</h2>
+        <p data-i18n="galleryText">Mình bổ sung gallery phong cách cổ nhã để sau này bạn chỉ cần thay ảnh thật vào là website sẽ lung linh hơn nữa.</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <button class="gallery-card dynamic-gallery" data-slot="5"><img class="dynamic-photo" data-slot="5" data-fallback="assets/images/placeholder.svg" src="assets/images/placeholder.svg" alt="Gallery 1"><span data-i18n="gallery1">Khoảnh khắc đầu tiên</span></button>
+        <button class="gallery-card tall dynamic-gallery" data-slot="6"><img class="dynamic-photo" data-slot="6" data-fallback="assets/images/placeholder.svg" src="assets/images/placeholder.svg" alt="Gallery 2"><span data-i18n="gallery2">Nụ cười dịu dàng</span></button>
+        <button class="gallery-card dynamic-gallery" data-slot="7"><img class="dynamic-photo" data-slot="7" data-fallback="assets/images/placeholder.svg" src="assets/images/placeholder.svg" alt="Gallery 3"><span data-i18n="gallery3">Ánh nhìn đồng điệu</span></button>
+        <button class="gallery-card wide dynamic-gallery" data-slot="8"><img class="dynamic-photo" data-slot="8" data-fallback="assets/images/placeholder.svg" src="assets/images/placeholder.svg" alt="Gallery 4"><span data-i18n="gallery4">Lưu dấu thanh xuân</span></button>
+      </div>
+    </section>
+
+    <section class="section film-strip-section" id="image-scroll">
+      <div class="section-title reveal">
+        <span data-i18n="reelTag">Cuốn chiếu ảnh</span>
+        <h2 data-i18n="reelTitle">Thủ quyển ký ức 1–10</h2>
+        <p data-i18n="reelText">Mình đã thêm sẵn thư mục <strong>image</strong>. Bạn chỉ cần bỏ ảnh vào với tên từ <strong>1</strong> đến <strong>10</strong>, website sẽ tự động lấy ra để chạy hiệu ứng cuốn chiếu cổ trang.</p>
+      </div>
+      <div class="image-folder-note reveal">
+        <div class="folder-pill">image/1.jpg ... image/10.png</div>
+        <p data-i18n="reelNote">Hỗ trợ các đuôi phổ biến: jpg, jpeg, png, webp. Nếu thiếu ảnh, website sẽ tự dùng ảnh mặc định.</p>
+      </div>
+      <div class="film-strip-wrap reveal">
+        <div class="film-scroll-head left"></div>
+        <div class="film-scroll-head right"></div>
+        <div class="film-strip-window">
+          <div class="film-strip-track" id="filmStripTrack"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section planning-section">
+      <div class="section-title reveal">
+        <span data-i18n="planTag">Planning đề xuất</span>
+        <h2 data-i18n="planTitle">Lộ trình nâng cấp premium</h2>
+        <p data-i18n="planText">Mình đã vừa đề xuất vừa làm thêm nhiều hạng mục. Bên dưới là các điểm nổi bật tiếp tục có thể mở rộng nếu bạn muốn nâng cấp tiếp.</p>
+      </div>
+      <div class="plan-grid reveal">
+        <article class="plan-card"><strong>01</strong><h3 data-i18n="plan1Title">Story cuộn thư</h3><p data-i18n="plan1Text">Đã làm và chọn kiểu cuộn ngang để kể chuyện tình yêu theo phong cách thủ quyển cổ trang.</p></article>
+        <article class="plan-card"><strong>02</strong><h3 data-i18n="plan2Title">Gallery ảnh</h3><p data-i18n="plan2Text">Đã thêm thư viện ảnh với lightbox, sẵn sàng thay ảnh thật sau này.</p></article>
+        <article class="plan-card"><strong>03</strong><h3 data-i18n="plan3Title">RSVP + guestbook</h3><p data-i18n="plan3Text">Đã nâng cấp form lời chúc và lưu cục bộ để hiện thành sổ lưu bút ngay trên web.</p></article>
+        <article class="plan-card"><strong>04</strong><h3 data-i18n="plan4Title">Hiệu ứng cinematic</h3><p data-i18n="plan4Text">Đã tăng glow, hoa đăng, cánh sen, bong bóng, parallax và nhiều lớp cảnh sắc huyền ảo.</p></article>
+      </div>
+    </section>
+
+    <section class="section timeline-section">
+      <div class="section-title reveal">
+        <span data-i18n="timelineTag">Hành trình ngày vui</span>
+        <h2 data-i18n="timelineTitle">Nghi thức hỷ lễ</h2>
+      </div>
+      <div class="timeline reveal">
+        <article class="timeline-item">
+          <div class="time">16:30</div>
+          <div class="dot"></div>
+          <div class="card"><h3 data-i18n="time1Title">Nghênh khách</h3><p data-i18n="time1Text">Đón khách, thưởng trà và lưu lại những bức hình kỷ niệm đầu tiên.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="time">17:30</div>
+          <div class="dot"></div>
+          <div class="card"><h3 data-i18n="time2Title">Nghi lễ thành hôn</h3><p data-i18n="time2Text">Bái đường, trao lời hẹn ước và đón nhận lời chúc phúc từ hai họ.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="time">18:30</div>
+          <div class="dot"></div>
+          <div class="card"><h3 data-i18n="time3Title">Tiệc hỷ</h3><p data-i18n="time3Text">Nâng chén sum vầy, chung vui trọn vẹn và lưu giữ những phút giây đáng nhớ.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section venue-section">
+      <div class="venue-card reveal">
+        <span class="tag" data-i18n="venueTag">Địa điểm</span>
+        <h2 data-i18n="venueTitle">Trung Tâm Hội Nghị Quốc Gia</h2>
+        <p data-i18n="venueAddress">Mễ Trì, Nam Từ Liêm, Hà Nội</p>
+        <div class="venue-map">
+          <div class="river"></div>
+          <div class="pin">囍</div>
+        </div>
+        <a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=88%20Duong%20Hoa%20Dang%20Tan%20Binh%20Ho%20Chi%20Minh" data-i18n="venueBtn">Mở bản đồ</a>
+      </div>
+    </section>
+
+    <section class="section countdown-section">
+      <div class="section-title reveal">
+        <span data-i18n="countTag">Đếm ngày lành</span>
+        <h2 data-i18n="countTitle">Hẹn gặp trong ngày hỷ</h2>
+      </div>
+      <div class="countdown reveal" data-date="2025-12-07T17:30:00+07:00">
+        <div><strong id="days">00</strong><span data-i18n="countDays">Ngày</span></div>
+        <div><strong id="hours">00</strong><span data-i18n="countHours">Giờ</span></div>
+        <div><strong id="minutes">00</strong><span data-i18n="countMinutes">Phút</span></div>
+        <div><strong id="seconds">00</strong><span data-i18n="countSeconds">Giây</span></div>
+      </div>
+    </section>
+
+    <section class="section wishes-section">
+      <div class="wishes-card reveal">
+        <div class="section-title compact">
+          <span data-i18n="wishTag">Hồi âm</span>
+          <h2 data-i18n="wishTitle">Gửi lời chúc phúc</h2>
+        </div>
+        <form id="rsvpForm">
+          <label>
+            <span data-i18n="nameLabel">Tên của bạn</span>
+            <input id="guestName" type="text" data-i18n-placeholder="namePlaceholder" placeholder="Ví dụ: Anh/Chị/Bạn..." required>
+          </label>
+          <label>
+            <span data-i18n="messageLabel">Lời chúc</span>
+            <textarea id="guestWish" data-i18n-placeholder="messagePlaceholder" placeholder="Gửi đôi lời chúc phúc cho Tiến Anh và Ngọc Huyền..." required></textarea>
+          </label>
+          <button class="btn primary" type="submit" data-i18n="wishBtn">Gửi lời chúc</button>
+        </form>
+        <p id="thanks" class="thanks" hidden data-i18n="wishThanks">Chúng tôi đã nhận được lời chúc của bạn. Xin chân thành cảm ơn!</p>
+        <div class="guestbook">
+          <div class="guestbook-head">
+            <span data-i18n="guestbookTag">Lưu bút hỷ sự</span>
+            <h3 data-i18n="guestbookTitle">Sổ lưu bút chúc phúc</h3>
+          </div>
+          <div id="guestbookList" class="guestbook-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+      <img id="lightboxImage" src="" alt="Expanded gallery image" />
+    </div>
+
+    <footer>
+      <div class="footer-seal">囍</div>
+      <p data-i18n="footerTitle">Tiến Anh & Ngọc Huyền</p>
+      <small data-i18n="footerText">Thiệp cưới online phong cách cổ trang Trung Hoa · 2025</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
